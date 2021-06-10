@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 2-1</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <style type="text/css">
+    * {
+      border: 2px solid white;
+      text-align: center;
+    }
+    .w-100 {
+      display: block;
+    }
+    @media (max-width: 768px) and (min-width: 576px) {
+      .w-100{
+        display: none;
+      }
+    }
+    .desktop {
+      display: block;
+    }
+    @media (max-width: 768px){
+      .desktop {
+        display: none;
+      }
+    }
+    .tablet {
+      display: none;
+    }
+    @media (max-width: 768px) and (min-width: 576px){
+      .tablet {
+        display: block;
+      }
+    }
+    .mobile{
+      display: none;
+    }
+    @media (max-width: 576px){
+      .mobile {
+        display: block;
+      }
+    }
+  </style>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div style="background-color: #66BB6A;" class="col-sm-12">Header</div>
+    </div>
+    <div class="row">
+    	<div style="background-color: blue;" class="col-sm-3 offset-md-3">1</div>
+    	<div style="background-color: blue;" class="col-sm-3">2</div>
+      <div class="col-md-3 w-100"></div>
+      <div style="background-color: blue;" class="col-sm-3">3</div>
+      <div style="background-color: blue;" class="col-sm-3 offset-md-6">4</div>
+    </div>
+    <div class="row">
+      <div  class="col-md-12 tablet" style="background-color: aqua;">
+        Tablet
+      </div>
+    </div>
+    <div class="row">
+      <div style="background-color: gray;" class="col order-md-4">a</div>
+      <div style="background-color: gray;" class="col order-md-3">b</div>
+      <div style="background-color: gray;" class="col order-md-2">c</div>
+      <div style="background-color: gray;" class="col order-md-1">d</div>
+    </div>
+    <div class="row">
+      <div  class="col-md-12 desktop" style="background-color: aqua;">
+        Desktop
+      </div>
+      <div  class="col-sm-12 mobile" style="background-color: aqua;">
+        Mobile
+      </div>
+    </div>
+    <div class="row">
+      <div  class="col-md-6 desktop" style="background-color: orange;">
+        :(
+      </div>
+      <div  class="col-md-6 desktop" style="background-color: orange;">
+        :D
+      </div>
+       <div  class="col-sm-6 tablet" style="background-color: orange;">
+        :D
+      </div>
+      <div  class="col-sm-6 tablet" style="background-color: orange;">
+        :(
+      </div>
+       <div  class="col-sm-6 mobile" style="background-color: orange;">
+        :D
+      </div>
+    </div>
+    <div class="row">
+      <div  class="col-md-12 desktop" style="background-color: #66BB6A;">
+        Foorter
+      </div>
+      <div  class="col-sm-12 tablet" style="background-color: #66BB6A;">
+        Foorter
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
+
+
